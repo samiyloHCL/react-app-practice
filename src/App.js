@@ -28,7 +28,7 @@ const App = () => {
                 <button className="search-button" type="submit">Search</button>
             </form>
 
-            {recipes.map( recipe => (<Recipe />))}
+            {/* {recipes.map( recipe => (<Recipe />))} */}
         </div>
     )
 }
