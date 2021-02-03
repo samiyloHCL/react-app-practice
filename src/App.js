@@ -6,11 +6,25 @@ class App extends Component {
         newItem: "",
         list: []
      }
-     
+
+     handleChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+     }
+
+     handleAdd = () => {
+
+     }
+
     render() { 
         return ( 
             <div>
-                Hello World
+                Add an Item
+                <br/>
+
+                <input type="text" placeholder="Type item here..." name="newItem" value={this.state.newItem} onChange={this.handleChange}></input>
+                <button onClick={() => this.handleAdd}>Add</button>
             </div>
          );
     }
